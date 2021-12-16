@@ -1,0 +1,8 @@
+{
+  "name": "datepicker size bug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "fa479bfc"
+}
