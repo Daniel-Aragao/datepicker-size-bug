@@ -1,4 +1,20 @@
 <div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <ion-icon
+    id="hi"
+    icon="calendar-outline"
+    class="calendar-icon"
+    size="large"
+  ></ion-icon>
+  <ion-popover trigger="hi" [showBackdrop]="false">
+    <ng-template>
+      <ion-datetime
+        size="fixed"
+        [mode]="'md'"
+        trigger="open-modal"
+        class="duration-date-label"
+        [(ngModel)]="value"
+        presentation="date-time"
+      ></ion-datetime>
+    </ng-template>
+  </ion-popover>
 </div>
